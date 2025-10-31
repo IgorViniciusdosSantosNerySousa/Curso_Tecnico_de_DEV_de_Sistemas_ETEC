@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Do Treinador </title>
+    <link rel="stylesheet" href="form.css">
+    <script src="jquerys/jquery-3.7.1.js"></script>
+    <script src="libs/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+</head>
+<body>
+    <div class="topo">
+        <div class="logo">
+            <img src="images/pokeball.jpg" alt="">
+        </div>
+        <h1> Formulário De Treinadores Pokémon </h1>
+        <ul class="menu">
+            <a href="pagina_Inicial.html">
+                <li> Inicio </li>
+            </a>
+            <a href="pokedex.html">
+                <li> Pokédex </li>
+            </a>
+            <a href="animes.html">
+                <li> Animes </li>
+            </a>
+            <a href="jogos.html">
+                <li> Jogos </li>
+            </a>
+        </ul>
+        <div class="burguer">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="form">
+        <div>       
+        <form>
+            <fieldset class="um">
+                <label for="txtNome">Nome: </label>
+                <br>
+                <input type="text" name="nome" id="txtNome">
+            </fieldset>
+            <br>
+            <fieldset>
+            <p>Qual seu Gênero?</p>
+            <br>
+            <input type="radio" name="rdSexo" id="rdMasculino" value="true">
+            <label for="rdMasculino">Masculino</label>
+            <input type="radio" name="rdSexo" id="rdFeminino" value="true">
+            <label for="rdFeminino">Feminino</label> 
+            <input type="radio" name="rdSexo" id="rdPrefiroNãoDizer" value="false">
+            <label for="rdPrefiroNãoDizer">Prefiro Não Dizer</label> 
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>De onde você vem?</p>
+                <select name="região" id="">
+                    <option value="null"></option>
+                    <option value="ka">Kanto</option>
+                    <option value="jo">Johto</option>
+                    <option value="ho">Hoenn</option>
+                    <option value="si">Sinnoh</option>
+                    <option value="un">Unova</option>
+                    <option value="kl">Kalos</option>
+                    <option value="al">Alola</option>
+                    <option value="gl">Galar</option>
+                    <option value="pd">Paldea</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>Data de nascimento</p>
+                <input type="date" name="dtNascto" id="">
+            </fieldset>
+            <br>
+            <fieldset class="um">
+                <label for="txtNome">Qual seu Pokémon favorito? </label>
+                <br>
+                <input type="text" name="nome" id="txtNome">
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>Fale sobre você:</p>
+                <textarea name="sobre" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>Informe seu Número de Telefone:</p>
+                <input type="tel" name="telefone" id="txtTelefone">
+            </fieldset>
+            <br>
+            <fieldset>
+                <div class="cor">
+                <p>*opicional</p>
+                </div>
+                <p>Informe seu CPF:</p>
+                <input type="text" name="cpf" id="txtCpf" pattern="regex">
+                <p>Informe seu RG:</p>
+                <input type="text" name="rg" id="txtRg" pattern="regex">
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>Com qual Pokémon você quer iniciar sua jornada?</p>
+                <br>
+                <input type="radio" name="rdSexo" id="rdMasculino" value="true">
+                <label for="rdMasculino">Bulbasaur</label>
+                <input type="radio" name="rdSexo" id="rdFeminino" value="false">
+                <label for="rdFeminino">Charmander</label> 
+                <input type="radio" name="rdSexo" id="rdPrefiroNãoDizer" value="false">
+                <label for="rdPrefiroNãoDizer">Squirtle</label> 
+            </fieldset>
+                <br>           
+            <fieldset>
+                <p>Login/Senha</p>
+                <input type="txt" name="email" id="">
+                <input type="password" name="senha" id="">
+            </fieldset>            
+            <input type="button" value="Cancelar">
+            <button href="" src="" id="btEnviar">Enviar</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="pokemon.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

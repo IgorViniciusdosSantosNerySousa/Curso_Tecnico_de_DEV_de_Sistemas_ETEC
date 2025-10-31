@@ -1,0 +1,20 @@
+Pagina da Empresa Bytes
+Estrutura de past
+
+- /style/: CSS
+-- /style/assets.css: css com as URLs das imagens e logos
+-- /style/colors.css: css com as cores em variáveis CSS.
+-- /style/font.css: css com as fontes personalizadas
+-- /style/core.css: css principal para a estrutura esqueleto de todas as paginas
+-- /style/landing.css: css específico da landing page (pagina inicial)
+
+- /script/: Javascript (não confundir com Java)
+- /script/hashtag.changer.js: o script responsável por mudar o texto da hashtag
+
+- /assets/: pasta onde fica as imagens com banners, logos, imagens de fundo etc.
+-- /assets/logos : onde vai ficar os logos
+-- /assets/images : onde vai ficar as imagens/banners
+
+- /fonts/: onde fica as fontes
+
+123

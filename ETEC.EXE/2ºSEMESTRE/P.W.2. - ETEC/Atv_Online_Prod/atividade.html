@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFESSOR EU TE AMO KKKKKKK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cards">
+    <form onsubmit="msg(event)">
+        <h2>CADASTRO DE USUÁRIOS!</h2>
+        <label for="usuario">Nome de Usuário: </label>
+        <p><input type="text" id="usuario" name="usuario"></p>
+        <label for="email">Email: </label>
+        <p><input type="text" id="email" name="email"></p>  
+        <label for="senha">Senha: </label>
+        <p><input type="password" id="senha" name="senha"></p>
+        <input type="submit" value="Cadastrar Usuário" id="cdUsu"> 
+    </form>
+    <form onsubmit="msg(event)">
+        <h2>CADASTRO DE PRODUTOS/SERVIÇOS</h2>
+        <label for="product-name">Nome do Produto/Serviço:</label>
+        <p><input type="text" id="product-name" name="product-name"></p>
+        <label for="description">Descrição:</label>
+        <p><input type="text" id="descricao" name="descricao"></p>
+        <label for="price">Preço:</label>
+        <p><input type="number" id="preco" name="preco"></p>
+        <input type="submit" value="Cadastrar Produto/Serviço">
+    </form>
+</div>
+<script>
+    function msg(event) {
+        event.preventDefault();
+        alert("CADASTRADO COM SUCESSO!!!");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+SSI - Segurança de Sistemas de Informação
+
+CONCEITOS:
+   * Conceitos de Segurança da Internet;
+   * Conceitos de Segurança da Informação (ISO 27001).
+
+Ameaças:
+   * Golpes, vulnerabilidades, ataques e malwares;
+   * Negação de Serviço - DOS e DDOS;
+   * Engenharia Social.
+
+Mecanismo de Segurança:
+   * Firewall, IDS e IPS;
+   * Teste de penetração e vulnerabilidades;
+   * Ferramentas Notáveis:
+       - Kali Linux, WireShark, NMAP, Metasplate, Nessus, entre outros. -
+   * Métodos de autenticação e autorização;
+   * Criptografia, Hashin, Certificados e Assinaturas Digitais.
+
+Segurança de Aplicativos Web:
+   * Mozila Web Security Guidelines;
+   * Projeto aberto segurança em aplicações Web (QWASP);
+   * Top 10 Web application Security Riska;
+   * Top 10 Proactive Controls;
+   * HTTPS, SSL e TLS;
+   * Cross - Origim Resource Sharing;
+   * Content Security Policy;
+   * Esquemas de Autenticação IANA | IETF;
+   * Basic (RFC 7617);
+   * OAuth 1.0 (RFC 5849);
+   * Bearer / OAuth 2.0 (RFC 6750);
+   * Fatores Humanos e Éticos;
+   * Privacidade;
+   * Lei Geral de Proteçãode Dados;
+   * Cultura Hacker;
+   * Guerra Cibernética, Ciberguerra (Cyberwarfare).

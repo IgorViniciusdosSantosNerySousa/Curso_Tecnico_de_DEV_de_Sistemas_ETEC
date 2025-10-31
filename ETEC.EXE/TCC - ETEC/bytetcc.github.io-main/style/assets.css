@@ -1,0 +1,22 @@
+/*
+
+COMO USAR:
+
+coloque @import url("assets.css"); no css desejado
+
+*/
+
+:root {
+
+    /* esse ./ significa diretório atual, o ".." significa ir para um diretório anterior
+    ou seja ele volta ao diretório anterior em relação esse (o style) e entra no diretório assets
+    
+    diretório = pasta
+
+    */
+
+    --logo: url("../assets/logo/logo.png");
+    --icon-team: url("../assets/images/team.svg");
+    --icon-support: url("../assets/images/support-svg-repo.svg");
+    --icon-contact: url("../assets/images/contact-svgrepo.svg");
+}

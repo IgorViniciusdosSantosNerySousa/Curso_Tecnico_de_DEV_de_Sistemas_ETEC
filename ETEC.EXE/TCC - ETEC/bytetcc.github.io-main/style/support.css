@@ -1,0 +1,72 @@
+/*
+
+COMO USAR:
+
+importe usando <link> no suporte.html
+
+*/
+
+@import url("core.css");
+body {
+    background-color: var(--verde-escuro);
+}
+div.content {
+    background-color: var(--fundo-claro);
+}
+div.content > div.banner-suporte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid var(--verde-principal);
+    background-color: var(--verde-principal);
+}
+
+div.content > div.banner-suporte > div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 70%;
+    color: var(--texto-claro);
+}
+div.content > div.banner-suporte  > div.image-container {
+    width: 150px;
+    height: 150px;
+    background-image: var(--icon-support);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.support-container {
+    color: var(--texto-escuro);
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 25px;
+}
+div.support-container > div {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+div.support-container > div > h3 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+div.support-container > div > h3 > img {
+    width: 3rem;
+    height: 3rem;
+}

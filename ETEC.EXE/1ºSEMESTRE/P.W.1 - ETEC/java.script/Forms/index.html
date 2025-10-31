@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/jquery-3.7.1.js"></script>
+    <script src="libs/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+    <title>Formulários</title>
+    
+</head>
+<body>
+    
+    <form>
+        <fieldset class="um">
+            <label for="txtNome">Nome:</label>
+            <input type="text" name="nome" id="txtNome">
+        </fieldset>
+        <fieldset>
+             <p>Você é Habilitado?</p>
+             <input type="radio" name="rdHabilitado" id="rdSim" value="true">
+             <label for="rdSim">Sim</label>
+             <input type="radio" name="rdHabilitado" id="rdNao" value="false">
+             <label for="rdNao">Não</label>            
+        </fieldset>
+        <fieldset>
+            <p>Bairro</p>
+            <select name="Bairro" id="">
+                <option value="null"></option>
+                <option value="it">Itaquera</option>
+                <option value="sm">São Mateus</option>
+                <option value="ttp">Tatuapé</option>
+                <option value="ar">Aricanduva</option>
+                <option value="smg">São Miguel</option>
+                <option value="cl">Cidade Líder</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Ano de nascimento</p>
+            <select name="anoNascto" id="">
+                <script>
+                    for(x=1900;x<=2024;x++){
+                        document.write("<option value="+x+">"+x+"</option>");
+                    }
+                </script>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Data de nascimento</p>
+            <input type="date" name="dtNascto" id="">
+        </fieldset>
+        <fieldset>
+            <p>Esportes?</p>
+            <input type="checkbox" name="esportes[]" id="ft">Futebol<br>
+            <input type="checkbox" name="esportes[]" id="vl">Vôlei<br>
+            <input type="checkbox" name="esportes[]" id="nt">Natação<br>
+            <input type="checkbox" name="esportes[]" id="pg">Ping Pong<br>
+            <input type="checkbox" name="esportes[]" id="bq">Basquete<br>
+            <input type="checkbox" name="esportes[]" id="hb">Hand-Ball<br>
+        </fieldset>
+        <fieldset>
+            <p>Fale sobre você:</p>
+            <textarea name="sobre" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <p>Telefone</p>
+            <input type="tel" name="telefone" id="txtTelefone">
+        </fieldset>
+        <fieldset>
+            <p>CPF:</p>
+            <input type="text" name="cpf" id="txtCpf" pattern="regex">
+        </fieldset>
+        <fieldset>
+            <p>Senha</p>
+            <input type="password" name="senha" id="">
+        </fieldset>
+        <input type="button" value="Cancelar">
+        <button id="btEnviar">Enviar</button>
+
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

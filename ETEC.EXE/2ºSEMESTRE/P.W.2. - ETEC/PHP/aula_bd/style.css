@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type=file]{
+    display: none;
+}
+
+#txtFoto{
+    border: solid 1px black;
+    list-style-type: none;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.5s;
+    background-color: purple;
+    color: white;
+}
+
+.topo{
+    height: 70px;
+    background-color: rgb(255, 176, 5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    height: 70px;
+    line-height: 70px;
+    background-image: url(fotos/pode_sim_man.png); 
+}
+
+.letreiro{
+    mix-blend-mode: screen;
+    font-size: 30px;
+    font-family: protest;
+    background-color: yellow;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu>a{
+    border: solid 1px black;
+    list-style-type: none;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.5s;
+    background-color: purple;
+    color: white;
+}
+
+.menu>a:hover{
+    box-shadow: none;
+    transform: translateX(2px) translateY(2px);
+}
+
+#formAddCliente{
+    margin: 10px auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#formAddCliente #lblFoto{
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: #efefef;
+    border: solid 1px black;
+}
+
+#formAddCliente input[type=submit]{
+    width: 100px;
+    padding: 6px 0;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: solid 2px black;
+    padding: 2px;
+}
+
+.cards>div{
+    border: solid 1px black;
+    margin: 10px;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.59) 0 0 3px 3px;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+}
+
+.cards>div>img{
+    max-width: 280px;
+}
+
+
+
+
+

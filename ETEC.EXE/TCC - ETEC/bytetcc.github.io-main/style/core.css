@@ -1,0 +1,165 @@
+/*
+
+COMO USAR:
+
+coloque @import url("core.css"); no css desejado
+
+*/
+
+/*
+
+estrutura básica
+
+a pagina terá o body que será a pagina inteira
+
+o header será o cabeçalho
+
+o content será o conteudo do site em si
+
+e o footer será o rodapé
+
+*/
+
+@import url("colors.css");
+@import url("fonts.css");
+@import url("assets.css");
+
+:root {
+    --tamanho-imagem-largura: 100px;
+}
+
+/* reset de CSS */
+* {
+    font-family: 'OpenSauceRegular';
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* body será display flex com os elementos filho divido em coluna com a sua largura obrigatoriamente sendo de 100% ocupando toda a largura da tela possível */
+
+body.app {
+    display: flex;
+    flex-direction: column;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--verde-escuro2);
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+div.header > div.logo > a {
+    text-decoration: none;
+}
+
+div.header > div.logo > a > img {
+    width: var(--tamanho-imagem-largura);
+}
+.burger {
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    div.header > span.links, div.header > span.links > a {
+        display: none;
+    }
+    .burger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+    .burger > div {
+        background-color: white;
+        width: 2.5rem;
+        height: .5rem;
+    }
+    .exibir {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-right: 1rem;
+    }
+}
+
+div.header > span.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    min-width: 40%;
+}
+
+div.header > span.links > a {
+    text-decoration: none;
+    background-color: var(--fundo-claro);
+    color: var(--texto-modo-claro);
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16pt;
+    border-radius: 10px;
+}
+
+div.header > span.links > a:hover {
+    filter: brightness(80%);
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verde-escuro);
+    gap: 0.5rem;
+    color: var(--texto-claro);
+    text-align: center;
+}
+div.footer > div.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+div.footer > div.links > a {
+    color: var(--texto-claro);
+}
+div.footer > div.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+div.footer > div.logo > a {text-decoration: none;}
+div.footer > div.logo > a > img {
+    width: var(--tamanho-imagem-largura);
+    height: var(--tamanho-imagem-altura);
+}
+div.rede-sociais-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+    margin: .2rem;
+}
+
+div.rede-sociais-icons-container > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+div.rede-sociais-icons-container > a > img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%);
+}

@@ -1,0 +1,237 @@
+/*
+
+COMO USAR:
+
+importe usando <link> no index.html
+
+*/
+
+@import url("core.css");
+
+div.content > div.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid var(--verde-principal);
+    background-color: var(--verde-principal);
+
+}
+
+div.content > div.banner > div.text-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 70%;
+    color: var(--texto-claro);
+}
+
+div.content > div.banner > div.text-and-button > a {
+    background-color: var(--fundo-claro);
+    color: var(--texto-escuro);
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    padding: 13px;
+    display: inline-block;
+}
+
+div.content > div.banner > div.text-and-button > a:hover {
+    filter: brightness(80%);
+}
+
+div.content > div.banner > div.image-container {
+    width: 300px;
+    height: 300px;
+    background-image: var(--icon-team);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+div.presentation > div.presentation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 70%;
+}
+div.presentation > div.presentation-text > img {
+    width: 300px;
+    object-fit: cover;
+}
+
+div.presentation > div.presentation-text > h2 > span#hashtag-text > i {
+    background-image: linear-gradient(90deg, rgb(0, 212, 78) 0%, #006229 100%);
+    background-clip: text;
+    font-style: normal;
+    margin: .2rem;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+
+div.presentation > div.image-section {
+    width: 400px;
+    height: 400px;
+    background-image: url("../assets/images/team.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.quote-container {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.664);
+    background-color: var(--verde-claro);
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div.quote-container > div.quote-text {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+div.quote-container > div.quote-image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+div.offer {
+    margin: 5px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div.offer > div.offer-items {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div.offer > div.offer-items > div.offer-item-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5rem;
+}
+div.offer > div.offer-items > div.offer-item-count > svg {
+    border: 2px solid var(--verde-principal);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20%;
+}
+
+div.byte-team {
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.432);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 2rem;
+
+    background-color: var(--verde-claro);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+}
+div.byte-team > div.collaborator-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
+}
+div.byte-team > div.collaborator-container > div.collaborator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+div.byte-team > div.collaborator-container > div.collaborator > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--verde-principal);
+}
+
+div.contato-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+div.contato-container > a {
+    text-decoration: none;
+    color: var(--texto-claro);
+    background-color: var(--verde-principal);
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+div.contato-container > a:hover {
+    filter: brightness(80%);
+}
+
+div.byte-team > 
+div.collaborator-container > 
+div.collaborator >
+div >
+div.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+    margin: .2rem;
+}
+
+div.byte-team > 
+div.collaborator-container > 
+div.collaborator >
+div >
+div.icons >
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.byte-team > 
+div.collaborator-container > 
+div.collaborator >
+div >
+div.icons >
+a >
+img {
+    width: 2rem;
+    height: 2rem;
+}

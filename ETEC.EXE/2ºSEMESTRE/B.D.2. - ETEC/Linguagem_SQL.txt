@@ -1,0 +1,14 @@
+Linguagem SQL
+
+DML -> data Manipulation Language
+Inclusão, Consulta, Atualização e Exclusão
+INSERT
+SELECT
+UPDATE
+DELETE
+
+DDL -> Data Definition Language
+CREATE \
+ALTER   > TABLE, PROCEDURE, VIEW, TRIGGER, FUNCTION
+DROP   /
+

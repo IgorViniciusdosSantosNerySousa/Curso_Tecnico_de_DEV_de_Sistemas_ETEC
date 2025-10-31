@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login>div{
+    width: 500px;
+    height: 80vh;
+    border: solid 2px black;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;    
+    padding:20px;    
+    text-align: center;
+    box-shadow: 7px 7px 7px #1B2A41;
+    border-radius: 20px;    
+    justify-content: center;
+    background-color: rgba(214, 214, 214, 0.6);
+}
+
+.layout2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: solid 2px black;
+    padding: 2px; 
+}
+
+.layout2>div{
+    border: solid 1px black;
+    margin: 10px;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.59) 0 0 3px 3px;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+}
+
+body{
+    background-image: image-set(url('images/body-bg.jpg'));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.topo{
+    height: 90px;
+    background-color: #ca101c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'Tinos';
+}
+
+.menu {
+    display: flex;
+}
+
+.menu>a{
+    padding: 10px 20px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 6px;
+    margin: 0 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px rgb(116, 116, 116);
+    transition: 0.5s;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    box-shadow: white;
+    font-family: 'Tinos';
+    font-size: 17px;
+}
+
+.menu>a:hover{
+    box-shadow: none;
+    transform: translateX(2px) translateY(2px);
+}

@@ -1,0 +1,33 @@
+cd\ ←  volta para a pasta raiz C:
+
+cd.. ← volta uma pasta por vez
+
+cd nomedapasta ← abre a pasta digitada
+
+ls ← limpa a tela
+
+dir ← lista os arquivos da pasta
+
+dir /w ← mostra os arquivos da pasta de outra forma
+
+md nomedapasta ← cria uma nova pasta
+
+dir /s ← listar todos os arquivos do sistema (ctrl^C pausar)
+
+dir /s/p ← listar todos os arquivos
+
+dir *.extensaodoarquivo ← filtra os documentos no formato especificado 
+
+type nomedodocumento ← abre o conteúdo do documento
+
+ren nomedodocumento nomenovo ← altera o nome do documento
+
+copy nomedodocumento c:\nomedapasta ← copia o documento especificado para a pasta
+
+copy *tipododocumento c:\nomedapasta ← copia o tipo de documento especificao para a pasta
+
+d: ← acessa o pendrive
+
+label ← mostra informações sobre o pendrive
+
+

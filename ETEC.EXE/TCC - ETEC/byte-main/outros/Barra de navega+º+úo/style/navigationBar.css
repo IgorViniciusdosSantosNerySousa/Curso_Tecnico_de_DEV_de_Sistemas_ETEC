@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .nav_bar_Community {
+    width: 100%;
+    height: 60px;
+    background-color:#313131;
+    color: #add0d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: fixed;
+    overflow-y: hidden;
+  }
+  
+  .nav_options_Community {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.searchBar {
+  padding-left: 10px;
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+  
+  .nav_options_Community > li {
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  
+  .nav_options_Community > li > a {
+    color: #6e6869;
+    text-decoration: none;
+  }
+
+  .icons {
+    width: 30px;
+    height: 30px;
+  }
+
+.searchArea{
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconSearch{
+  width: 26px;
+  height: 26px;
+  align-items: center;
+}
+  
+  .logo_nav {
+    width: 60px;
+    height: 40px;
+  }
+
+  .user-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: solid 2px white;
+  } 
+
+  .user{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-family: sans-serif;
+  }
+
+  .user-toggle{
+    display: flex;
+  }
+
+/*--------- Burguer  ---------*/
+
+.btnMenu {
+  position: fixed;
+  left: 50px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  top: 30px;
+}
+
+.btnBurger {
+  width: 30px;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.btnBurger::before,
+.btnBurger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btnBurger::before {
+  transform: translateY(-8px);
+}
+
+.btnBurger::after {
+  transform: translateY(8px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 200px;
+  height: 100%;
+  background-color: #313131;
+  transition: all 0.3s ease;
+}
+
+.navList {
+  list-style: none;
+  padding-left: 20%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+.navItem {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.navLink {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.nav.open {
+  left: 0;
+}
+
+.btnMenu.open .btnBurger {
+  transform: rotate(45deg);
+}
+
+.btnMenu.open .btnBurger::before {
+  transform: rotate(90deg) translateX(1px);
+}
+
+.btnMenu.open .btnBurger::after {
+  transform: rotate(90deg) translateX(-10px);
+  opacity: 0;
+}
+
+.btnMenu{
+    display: none;
+}
+
+/* Menu Usuário*/
+.navLinkUser{
+  text-decoration: none;
+  color: black;
+}
+
+.navItemUser{
+  list-style: none;
+}
+
+.user-toggle {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.navUser{
+  margin: 10px;
+  background-color: #313131b7;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: -110%;
+  left: 84%;
+  width: 10%;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.507);
+}
+
+.navItemUser{
+  text-align: center;
+  gap: 5px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgb(185, 185, 185);
+}
+
+.navItemUser > a{
+  color: rgb(228, 223, 223);
+}
+
+
+.navItemUser > a:hover{
+  color:#27727f;
+  text-decoration: underline;
+}
+
+.navUser.open{
+  top: 60px;
+}
+
+/* Ajustar tela para versão mobile */
+@media only screen and (max-width: 968px) {
+  .searchBar {
+    margin-left: 30px;
+    padding-left: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+  }
+    
+  .btnMenu{
+    display: block;
+  }
+
+  .user-toggle > p{
+    display: none;
+  }
+
+  .navOptions > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .nav_options_Community{
+    padding-right: 10px;
+  }
+
+    .option{
+      display: block;
+    }
+
+    .navOptions {
+      display: none;
+    }
+
+    .logo_nav {
+      margin-left: 50px;
+    }
+  
+    .navOptions > li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .navBar {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+}

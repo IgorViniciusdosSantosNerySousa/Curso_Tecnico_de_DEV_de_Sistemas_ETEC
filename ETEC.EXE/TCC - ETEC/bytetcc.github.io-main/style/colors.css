@@ -1,0 +1,19 @@
+/*
+
+COMO USAR:
+
+coloque @import url("colors.css"); no css desejado
+
+*/
+
+:root {
+    --fundo-claro: #FFFFFF;
+    --fundo-escuro: #313131;
+    --verde-principal:#069b3c;
+    --verde-secundario: #43935e;
+    --verde-claro: #7bdda4;
+    --verde-escuro: #005e27;
+    --verde-escuro2:rgb(0, 143, 59);
+    --texto-escuro: #000000;
+    --texto-claro: #FFFFFF;
+}

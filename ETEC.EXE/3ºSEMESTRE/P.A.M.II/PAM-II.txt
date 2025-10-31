@@ -1,0 +1,42 @@
+PTD - PLANO DE TRABALHO DOCENTE
+
+Competências
+
+1- Projetor aplicativos, selecionando linguagens
+de programação e ambientes de programação.
+1.1- Codificar aplicativos em tecnologia móvel.
+1.2- Utilizar ambientes de desenvolvimento mobile.
+     - Windows
+     - Linux 
+     - IOS. 
+1.3- Elaborar aplicativos com acesso e banco de dados.
+     - SQL Server
+     - Firebird
+     - Maria DB
+     - MySQL
+     - Oracle
+1.4- Construir layout de aplicativos dispositivos móveis.
+1.5- Utilizar recursos avançados do dispositivo (Smartphones e Tablets).
+
+
+APINFO.COM < mostra o que é necessário para o mercado android atual.
+
+BASES TÉCNOLOGICAS
+
+-Conectividade
+     - Consumo de API's rest;
+     - Comunicação TCP Full-Duplex (Sockets)
+	TCP = TRANSFER CONTROL PROTOCOL 
+	(PROTOCOLO DE TRANFERÊNCIA DE COMUNICAÇÃO)
+
+     - Integração com dispositivos embarcados Via Bluetooth
+
+-Autenticação
+   Recursos do Dispositivo
+     - Câmera;
+     - Sensores;
+     - Localização, orientação e mapas;
+     - Telefonia e SMS;
+
+Empacotamento e distribuição. 
+

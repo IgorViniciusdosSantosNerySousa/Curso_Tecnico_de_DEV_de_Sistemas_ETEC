@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url('images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.principal{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    width: 100%;
+    height: 80px;
+    font-size: 50px;
+    background-color: rgb(37, 126, 243);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu>a>li{
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white; 
+    background-color: rgb(255, 201, 24);
+    
+}
+
+.menu>a>li:hover{
+    background-color: rgb(255, 173, 80);
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+
+ul.menu{
+    display: flex;
+    list-style-type: none;
+    transition: 0.5s;
+}
+
+ul>a>li{
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    border: solid 2px rgb(240, 236, 236);
+    border-radius: 6px;
+    margin: 0 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px black;
+    transition: 0.5s;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: white;
+    
+}
+
+ul.menu>a>li:hover{
+    box-shadow: none;
+    transform: translateX(1px) translateY(1px);
+}
+.img{
+    width: 78px;
+    height: 78px;
+    display: flex;
+}
+
+.central{
+    width: 242px;
+    background-color: rgb(255, 0, 255);
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.central>div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    background-image: url('images/baco.png');
+    background-size: contain;
+    cursor: pointer;
+}
+.ocupado{
+    background-image: url('images/bacosoqvermelho.png') !important;
+}

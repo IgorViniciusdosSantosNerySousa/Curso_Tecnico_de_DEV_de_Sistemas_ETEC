@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: image-set(url('images/paris1920x1280.jpg') type("image/avif"));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.topo{
+    height: 80px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo>img{
+    height: 80px;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-around;
+}
+.menu>li{
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.burguer{
+    height: 28px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.burguer>div{
+    width: 26px;
+    border-radius: 10px;
+    height: 6px;
+    background-color: black;
+}

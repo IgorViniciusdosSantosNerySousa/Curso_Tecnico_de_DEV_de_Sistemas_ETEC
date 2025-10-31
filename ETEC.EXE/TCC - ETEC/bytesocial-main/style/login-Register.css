@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("font/Nexa-ExtraLight.ttf");
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nexa";
+}    
+
+body {
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+h2{
+    margin-bottom: 32px;
+    font-size: 55px;
+    text-align: center;
+} 
+
+p {
+    margin-bottom: 32px;
+    width: 400px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button{
+        background: linear-gradient(to right, #2c5661, teal);
+        ;
+    }
+}
+
+input, button{
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 400px;
+}
+
+input {
+    background-color: rgba(255 255 255 / .2);
+    color: rgba(255 255 255 / .9);
+}
+
+input::placeholder{
+    color: rgba(255 255 255 / .5);
+}
+
+button {
+    margin-top: 8px;
+    color: rgba(255 255 255 / .8);
+    font-weight: 800;
+    padding: 16px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+button:hover {
+    box-shadow:0 0 1em 0.5em rgba(0, 128, 128, 0.288);
+}
+
+.logo {
+    width: 150px ;
+    height: 90px;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 95%;
+    height: 95vh;
+    background-color: #313131;
+    padding: 32px 20px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}    
+
+.left, .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}    
+
+.formLogin, .formRegister, .containerLogin, .containerRegister {
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+} 
+
+.containerLogin, .containerRegister{
+    position: absolute;
+
+    h2, p {
+        color: rgb(255 255 255 / .9);
+    };
+
+    p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    button {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid white;
+    };
+}
+.alert {
+    color: black;
+}
+/* BACKGROUND MOVEL */
+
+.card::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("bytebackgroud.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: center;
+    z-index: 0;
+    background-size: cover;
+}
+
+/* LOGUIN ACTIVE*/
+
+.card.loginActive .containerLogin {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.loginActive .containerRegister {
+    transform: translateX(0);
+    transition: all .5s .5s;
+    opacity: 1;
+}
+
+.card.loginActive .formLogin {
+    transition: all .5s .5s;
+    opacity: 1;
+}
+
+.card.loginActive .formRegister {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.loginActive::after{
+    transform: translateX(50%);
+}
+
+/* REGISTER ACTIVE*/
+
+.card.registerActive .containerRegister {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.registerActive .containerLogin {
+    transform: translateX(0);
+    transition: all .5s .5s;
+    opacity: 1;
+}
+
+.card.registerActive .formRegister {
+    transition: all .5s .5s;
+    opacity: 1;
+}
+
+.card.registerActive .formLogin {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.registerActive::after{
+    transform: translateX(-50%);
+}
+
+/*ANIMAÇÕES*/
+
+.card::after {
+    transition: all .5s;
+}
+
+.containerRegister {
+    transition: all .5s 0;
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+.formLogin {
+    transition: all .5s 0;
+    opacity: 0;
+}
+
+.containerLogin {
+    transition: all .5s 0;
+    transform: translateX(-200%);
+    opacity: 0;
+}
+
+.formRegister{
+    transition: all .5s 0;
+    opacity: 0;
+}
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 1000;
+}
+
+.modalContent {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 2px black;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        background: linear-gradient(to right, #2c5661, teal);
+        width: 100px;
+    }
+
+    p {
+        color: black;
+        font-weight: bold;
+        padding-top: 35px;
+        font-size: 18Fpx;
+    }
+}
+
+.modalContainer {
+    display: none;
+}
+@media (max-width: 768px) {
+    
+} 
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte - Página Inicial</title>
+    <link rel="stylesheet" href="style/landing.css">
+    <script src="scripts/change-hashtag-word.js"></script>
+    <link rel="shortcut icon" href="assets/logo/favicon.ico">
+</head>
+<body class="app">
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img draggable="false" alt="Logo do site." src="./assets/logo/logo-cortado-branco.png">
+            </a>
+        </div>
+        <span class="links">
+            <a href="index.html">Home</a>
+            <a href="contato.html">Contato</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="sobre-nos.html">Sobre nós</a>
+        </span>
+        <span class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="banner">
+            <div class="text-and-button">
+                <h1>Somos a empresa que mais oferece soluções de comunicação entre programadores no Brasil.</h1>
+                <a href="#solucao">Conheça as nossas soluções</a>
+            </div>
+            <div class="image-container">
+            </div>
+        </div>
+        <div class="presentation" id="solucao">
+            <div class="presentation-text">
+                <img src="./assets/logo/byte_transparente.png" alt="Logo" class="logo">
+                <h2>Conheça Byte, a rede social dos programadores, feita e pensada por programadores.</h2>
+                <h2>Uma rede para <span id="hashtag-text"><i>#</i></span> terem um espaço colaborativo entre si.</h2>
+            </div>
+            <div class="image-section"></div>
+        </div>
+
+        <!-- <div class="quote-container">
+            <div class="quote-text">
+                <h3>Citação exemplar sobre a necessidade de uma rede social para programadores</h3>
+                <h4>- Nome de quem fez a citação</h4>
+            </div>
+            <div class="quote-image">
+                imagem citação
+            </div>
+        </div> -->
+        <div class="offer">
+            <h1>O que a Byte tem a oferecer?</h1>
+            <div class="offer-items">
+                <div class="offer-item-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>                      
+                    <h3>Um ambiente colaborativo de aprendizado e ensino.</h3>
+                </div>
+                <div class="offer-item-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                    </svg>               
+                    <h3>Possibilidade de programadores mostrarem o seu trabalho e terem networking.</h3>
+                </div>
+                <div class="offer-item-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                    <h3>Um lugar para a discussão de temas relacionados a programação.</h3>
+                </div>
+                <div class="offer-item-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                    </svg>  
+                    <h3>Um lugar para você partilhar a sua jornada como estudante até programador.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="byte-team">
+            <h1>Quem está por trás da Byte?</h1>
+            <div class="collaborator-container">
+                <div class="collaborator">
+                    <img src="/assets/images/grazy.jpeg" alt="IMG">
+                    <div>
+                        <h2>Graziela S. Dantas</h2>
+                        <h3>Designer</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="/assets/images/brenno.jpg" alt="IMG">
+                    <div>
+                        <h2>Brenno Miguel</h2>
+                        <h3>Desenvolvedor Back-End</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="/assets/images/edu.jpg" alt="IMG">
+                    <div>
+                        <h2>Eduardo da Silva</h2>
+                        <h3>Desenvolvedor Back-End</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="./assets/images/igor.jpeg" alt="IMG">
+                    <div>
+                        <h2>Igor Vinícius</h2>
+                        <h3>Adminstrador de Banco de Dados</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="./assets/images/maduh.jpeg" alt="IMG">
+                    <div>
+                        <h2>Maria Eduarda Zinevicius</h2>
+                        <h3>Adminstradora de Banco de Dados</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="./assets/images/rafa.jpeg" alt="IMG">
+                    <div>
+                        <h2>Rafael da Silva</h2>
+                        <h3>Desenvolvedor Front-End</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="./assets/images/victor.jpg" alt="IMG">
+                    <div>
+                        <h2>Victor Xavier</h2>
+                        <h3>Desenvolvedor Back-End</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborator">
+                    <img src="./assets/images/isaias.png" alt="IMG">
+                    <div>
+                        <h2>Isaías Roberto</h2>
+                        <h3>Desenvolvedor Front-End</h3>
+                        <div class="icons">
+                            <a id="gh-link" href="#">
+                                <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github">
+                            </a>
+                            <a id="linkdin-link" href="#">
+                                <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn">
+                            </a>
+                            <a id="insta-link" href="#">
+                                <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contato-container">
+            <h1>Alguma dúvida? Entre em contato com a gente.</h1>
+            <a href="contato.html">Contato</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <a href="index.html">
+                <img draggable="false" alt="Logo do site." src="./assets/logo/logo-cortado-branco.png">
+            </a>
+            <div class="rede-sociais-icons-container">
+                <a id="gh-link" href="#">
+                    <img src="assets/redes_sociais/github-142-svgrepo-com.svg" alt="Github da Empresa">
+                </a>
+                <a id="linkdin-link" href="#">
+                    <img src="assets/redes_sociais/linkedin-svgrepo-com.svg" alt="LinkdIn da Empresa">
+                </a>
+                <a id="insta-link" href="#">
+                    <img src="assets/redes_sociais/instagram-svgrepo-com.svg" alt="Instagram da Empresa">
+                </a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="sobre-nos.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="politica-de-privacidade.html">Saiba como a Byte respeita a sua privacidade.</a>
+        </div>
+        <p>Copyright Byte 2024 - Todos os direitos reservados.</p>
+    </div>
+</body>
+<script src="scripts/burguer-menu.js"></script>
+</html>

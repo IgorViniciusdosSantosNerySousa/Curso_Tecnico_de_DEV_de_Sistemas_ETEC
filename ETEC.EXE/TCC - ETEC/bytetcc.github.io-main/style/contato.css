@@ -1,0 +1,89 @@
+/*
+
+COMO USAR:
+
+importe usando <link> no contato.html
+
+*/
+
+@import url("core.css");
+body {
+    background-color: var(--verde-escuro);
+}
+div.content > div.banner-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid var(--verde-principal);
+    background-color: var(--verde-principal);
+}
+
+div.content > div.banner-contato > div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 70%;
+    color: var(--texto-claro);
+}
+div.content > div.banner-contato  > div.image-container {
+    width: 150px;
+    height: 150px;
+    background-image: var(--icon-contact);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--fundo-claro);
+}
+
+div.contact > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+div.contact > form > div > input[type="submit"] {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: var(--verde-principal);
+    color: var(--texto-claro);
+    border: 0;
+    border-radius: .7rem;
+    min-width: 50vw;
+}
+
+div.contact > form > div > input[type="submit"]:hover {
+    filter: opacity(80%);
+}
+
+
+div.contact > form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+div.contact > form > div > label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+div.contact > form > div > input:not([type="submit"]), div.contact > form > div > textarea {
+    font-size: 1.4rem;
+    padding: .5rem;
+    min-width: 50vw;
+    border: 2px solid var(--verde-secundario);
+    border-radius: 1rem;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Assentos | Cometa</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquerys/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="img">
+            <img src="images/comenta.jpg" alt="">
+        </div>
+        <h3>Faça sua reserva!!!</h3>
+        <ul class="menu">
+            <a href=""> <li> Inicio </li> </a>
+            <a href=""> <li> Ajuda </li> </a>
+            <a href=""> <li> Contato </li> </a>
+            <a href=""> <li> Viagens </li> </a>
+        </ul>
+    </div>
+    <div class="principal">
+        <div class="central">
+            <script>
+                for (x = 1; x <= 24; x++) {
+                    document.write("<div>" + x + "</div>");
+                }
+            </script>
+        </div>
+        <div class="central">
+            <script>
+                for (x = 25; x <= 48; x++) {
+                    document.write("<div>" + x + "</div>");
+                }
+            </script>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

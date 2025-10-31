@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --color-neutral-0: #0c0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+*{
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body{
+    background-color: var(--color-neutral-40);
+}
+
+.jogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: image-set(url('images/body-bg.jpg'));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.jogos>div>h1{
+    color: whitesmoke;
+    font-family: 'Tinos';
+}
+
+.jogos>div>p{
+    color: whitesmoke;
+    text-align: justify;  
+    font-family: 'Tinos';  
+}
+
+.jogos>div{
+    border: solid 2px black;
+    width: 550px;
+    height: 660px;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    text-align: justify;
+    box-shadow: 7px 7px 7px #1B2A41;
+    border-radius: 20px;
+    background-color: #ca101c;
+}
+
+.jogos>div>img{
+    width: 80%;
+    border: solid 2px black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2px;
+    background-color: black;
+    margin: 2px;
+}
+
+.topo{
+    height: 90px;
+    background-color: #ca101c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.topo>h1{
+    color: white;
+    font-family: 'Tinos';
+}
+
+.logo>img{
+    height: 75px;
+    width: 75px;
+    padding: 7px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-around;
+    color: white;
+}
+
+ul.menu{
+    display: flex;
+    list-style-type: none;
+    transition: 0.5s;
+}
+
+ul>a>li{
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    border: solid 2px rgb(240, 236, 236);
+    border-radius: 6px;
+    margin: 0 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px rgb(116, 116, 116);
+    transition: 0.5s;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    box-shadow: white;
+    font-family: 'Tinos';
+    font-size: 17px;
+}
+
+ul.menu>a>li:hover{
+    box-shadow: none;
+    transform: translateX(1px) translateY(1px);
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu>a>li{
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black; 
+    background-color: aliceblue;    
+}
+
+.menu>a>li:hover{
+    background-color: rgb(199, 199, 199);
+    color: #000000;
+}
+
+.burguer{
+    display: none;
+    flex-direction: column;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.burguer>div{
+    width: 30px;
+    height: 6px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px black;
+    transition: 0.5s;
+}
+
+@media screen and  (max-width: 1024px) {
+    .burguer{
+        display: block;
+    }
+
+    .menu{
+        background-image: image-set(url('images/footer-bg.png'));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 50%;
+        height: 50%;
+        background-color: #ca101c;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        border: solid 4px black;
+        border-radius: 5%;
+    }
+
+    .jogos>div{
+        width: 80%;
+    }
+
+    .jogos>div>img{
+        width: 70%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px var(--color-neutral-0);
+    }
+
+    ul>a>li{
+        text-align: center;
+    }    
+}
+
+.exibir{
+    transform: translateX(12px);
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: #ca101c;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts img {
+    width: 30%;
+    padding: 20px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;   
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#instagram1 {
+    background-color: black;
+}
+
+#facebook {
+    background-color: black;
+}
+
+#whatsapp {
+    background-color: black;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: black;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: var(--color-neutral-30);
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-30);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;    
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}

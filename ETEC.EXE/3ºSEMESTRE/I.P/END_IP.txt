@@ -1,0 +1,40 @@
+Endereçamento de Internet Protocol (IP)
+
+Classe A ->  10  .   10  .  10  .  10
+   |       8bits   8bits  8Bits  8Bits
+   |        Red    Host   Host   Host
+   |        \_/    \________________/
+   |       8Bits         24Bits
+  \_/
+No 1º Octeto
+verificar -> 1 até 126                                                       Ping 127.0.0.1
+                                                                             Loopback
+
+
+Classe B ->   175     .     175     .     175     .     175
+   |       1ºOcteto      2ºOcteto      3ºOcteto      4ºOcteto
+   |         8Bits         8Bits         8Bits         8Bits
+   |      \______________________/    \______________________/
+   |               16Bits                      16Bits
+   |                Rede                        Host
+  \_/
+no 1ºocteto
+verificar -> 128 até 191
+
+
+
+Classe C ->   192     .     168     .     0     .     2
+   |       1ºOcteto      2ºOcteto      3ºOcteto    4ºOcteto
+   |         8Bits         8Bits         8Bits       8Bits
+   |     \_____________________________________/  \________/
+   |                    24Bits                      8Bits
+   |                     Rede                       Host
+  \_/
+no 1ºOcteto 
+verificar -> 192 até 223 
+
+
+              BroadCast
+                  |
+Rede Zero <- 0 - 225 => não utilizável
+          Regra - 2Bits 

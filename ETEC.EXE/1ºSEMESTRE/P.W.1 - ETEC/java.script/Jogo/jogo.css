@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'jogo_fontes';
+    src: url('fonts/BebasNeue-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'jogo_fontes';
+}
+
+#campo1, #campo2{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;   
+}
+

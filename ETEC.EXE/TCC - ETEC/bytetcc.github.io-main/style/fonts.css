@@ -1,0 +1,23 @@
+/*
+
+COMO USAR:
+
+coloque @import url("fonts.css"); no css desejado
+
+EXEMPLO:
+
+@font-face {
+    font-family: 'nome-da-fonte';
+    src: url('./../fonts/NOMEDAFONTE');
+}
+
+*/
+
+@font-face {
+    font-family: 'OpenSauceRegular';
+    src: url("../fonts/OpenSauceTwo-Regular.ttf");
+}
+@font-face {
+    font-family: 'OpenSauceBold';
+    src: url("../fonts/OpenSauceTwo-Bold.ttf");
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PokéInfo - O Universo Pokémon! </title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="paginaInicial.css">
+    <script src="jquerys/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+    <p>
+        <?php 
+            @session_start();
+            if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }
+        ?>
+    </p>
+   
+    <div class="topo">
+        <div class="logo">
+            <a href="pagina_Inicial.php"><img src="images/pokeball.jpg" alt="" title="Ir para a Página Inicial"></a>
+        </div>
+        <h1> PokéInfo - O Universo Pokémon! </h1>
+        <ul class="menu">
+            <a href="">
+                <li> Inicio </li>
+            </a>
+            <a href="pokedex.php">
+                <li> Pokédex </li>
+            </a>
+            <a href="animes.php">
+                <li> Animes </li>
+            </a>
+            <a href="jogos.php">
+                <li> Jogos </li>
+            </a>
+        </ul>
+        <div class="burguer">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="pagina">
+        <div>
+            <h1> A Origem de Tudo... </h1>
+            <br>
+            <img src="images/universo_pokemon.jpg" alt="">
+            <br>
+            <p> O universo Pokémon é o lugar onde todos os Pokémon e humanos vivem. Esse universo, além do mundo
+                Pokémon, abriga também outras dimensões e mundos alternativos.
+                <br><br>
+                É dito em muitos mitos de Sinnoh que o universo Pokémon foi criado por Arceus. As lendas dizem que
+                Arceus nasceu de um Ovo no meio de puro caos, e depois formou o universo com seus mil braços. Arceus
+                criou Dialga e Palkia e lhes deu as habilidades de controlar o tempo e o espaço respectivamente. Junto
+                com estes dois, Arceus também criou Giratina e lhe concedeu a habilidade de manipular a anti-matéria.
+                Ambos Palkia e Dialga vivem em sua respectivas dimensão; Giratina por sua vez, vive no mundo reverso.
+                <br>
+                Com a criação do Universo, muitos astros, estrelas, planetas e outros corpos celestes foram se formando.
+                O mundo Pokémon foi criado juntamente com estes planetas, e nas fases iniciais de criação do planeta, ou
+                até mesmo antes, Arceus criou Azelf, Uxie e Mesprit para dar força de vontade, conhecimento e emoções
+                aos seres vivos.
+                <br><br>
+                Há no mínimo dois planetas no mundo Pokémon conhecidos. Um deles é o mundo Pokémon, juntamente com a
+                lua, na qual, de acordo com lendas, é de onde os Clefairy vêm. Existe outro mundo sem nome de onde
+                Deoxys vem. Há pelo menos uma estrela conhecida, já que elas aparecem em todos os episódios. Outros
+                planetas e estrelas, se existirem, são desconhecidos. Durante as cenas noturnas no anime é possível ver
+                que alguns Pokémon representam as constelações, como Teddiursa e Ursaring que representam a Ursa menor e
+                maior.
+                <br><br>
+                O Mundo Pokémon é o principal planeta conhecido, onde os Pokémon e humanos vivem. Este planeta parece e
+                age como o mundo real em termos de geografia. Ambos têm relevo, oceanos e água que suportam a vida,
+                sugerindo que o mundo Pokémon está aproximadamente na mesma distância do nosso ao Sol e também o mesmo
+                tamanho. Os seres humanos e a natureza também estão muito ligados lá, um exemplo disso é que todas as
+                cidades e vilas estão ao redor da natureza. O mundo Pokémon é dividido em regiões como Kanto, Johto,
+                Hoenn, Sinnoh, Unova, Kalos, Alola e Galar, e elas apresentam uma grande diversidade de formas de
+                relevo. Fora estas regiões, existem também arquipélagos de ilhas que não pertencem à nenhuma região.
+                Embora existam grandes semelhanças entre as regiões, existem também grandes diferenças, tais como as
+                lendas e crenças envolvendo os Pokémon e os Pokémon que mudam de região para região.
+                <br><br>
+                O meio natural do mundo Pokémon também é muito semelhante ao presente na Terra. As áreas com alta
+                densidade de árvores formam florestas, áreas que não recebem precipitações se tornam desertos, enquanto
+                outras áreas costeiras formam praias que atraem muitas pessoas e Pokémon. Regiões como Hoenn e Sinnoh
+                apresentam uma grande diversidade de ambientes, como florestas e desertos lado a lado. O mundo Pokémon é
+                muito verde e exuberante com base em fatores como estruturas vegetais, plantas, árvores, arbustos e
+                gramíneas. A grama está presente em todo lugar e em tamanhos desproporcionais, servindo como habitat
+                para Pokémon selvagens.
+            </p>
+        </div>
+    </div>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img src="images/pokeball.jpg" alt="">
+                    <p> Nos siga em nossas Redes Sociais!! </p>
+
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/pokemon/" class="footer-link" id="instagram1">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Pokemon/" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.reddit.com/r/pokemon/" class="footer-link" id="reddit">
+                            <i class="fa-brands fa-reddit"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Saiba Mais sobre: </h3>
+                    </li>
+                    <li>
+                        <a href="https://www.pokemon.com/br/dibujos-animados" class="footer-link"> Animes Pokémon.</a>
+                    </li>
+                    <li>
+                        <a href="https://pt.moyens.net/jogos/todos-os-jogos-pokemon-em-ordem-cronologicamente-e-por-data-de-lancamento/#:~:text=Pok%C3%A9mon%20Vermelho%2C%20Azul%2C%20Verde%20e%20Amarelo%20%281998-1999%29%20Pok%C3%A9mon,%282011%29%20Pok%C3%A9mon%20Preto%202%20e%20Branco%202%20%282012%29"
+                            class="footer-link"> Jogos Pokémon.</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pokemon.com/br/pokedex" class="footer-link"> Pokédex Completa!</a>
+                    </li>
+                </ul>
+                
+                <h1 id="form">Quer se tornar um Treinador Pokémon?<a href="form.php"> Clique Aqui!</a></h1>
+                
+            </div>
+            <div id="footer_copyright">
+                &#169
+                2024 All Rights Reserved
+            </div>
+        </footer>
+    
+    <script src="pokemon.js"></script>
+
+</body>
+
+</html>

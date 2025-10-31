@@ -1,0 +1,58 @@
+@import url("core.css");
+
+body {
+    background-color: var(--verde-escuro);
+}
+div.content {
+    background-color: var(--fundo-claro);
+}
+div.content > div.banner-about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid var(--verde-principal);
+    background-color: var(--verde-principal);
+}
+
+div.content > div.banner-about-us > div.text > h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--texto-claro);
+}
+/* div.content > div.banner-about-us  > div.image-container {
+    width: 150px;
+    height: 150px;
+    background-image: var(--icon-support);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+div.content > div.sobre-nos-texto > img {
+    width: 200px;
+    height: 200px;
+}
+
+div.content > div.sobre-nos-texto {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+div.content > div.sobre-nos-texto > span
+{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
